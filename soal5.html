@@ -1,0 +1,63 @@
+<html>
+<head>
+    
+    </head>
+    <body>
+        <h1>
+            <span class="animate">JavaScript Variable</span>
+        </h1>
+    
+        <p>
+            <span id="content"></span>
+        </p>
+        <script>
+
+    
+var name1 = prompt('Masukan Nama Pemain 1');
+console.log('nama1 '+name1);
+var tinggi1 = prompt('Masukan Tinggi Pemain 1');
+console.log('tinggi1 '+tinggi1);
+var usia1 = prompt('Masukan Usia Pemain 1');
+console.log('Usia1 '+usia1);
+    
+var namet2 = prompt('Masukan Nama Pemain 2');
+console.log('nama2 '+namet2);
+var tinggi2 = prompt('Masukan Tinggi Pemain 2');
+console.log('tinggi2 '+tinggi2);  
+var usia2 =prompt('Masukan Usia Pemain 2');
+console.log('usia2 '+usia2);
+
+var namet3 = prompt('Masukan Nama Pemain 3');
+console.log('nama3 '+namet3);
+var tinggi3 = prompt('Masukan Tinggi Pemain 3');
+console.log('tinggi3 '+tinggi3); 
+var usia3 = prompt('Masukan Usia Pemain 3');
+console.log('usia3 '+usia3);
+
+
+var hasil1=tinggi1+(5*usia1);
+var hasil2=tinggi2+(5*usia2);
+var hasil3=tinggi3+(5*usia3);
+    
+
+console.log('skor1='+hasil1+' skor2='+hasil2 +' skor3 '+hasil3);
+    
+    if((hasil1>hasil2)&&(hasil1>hasil3)){
+        console.log('Winner =1 dg skor ='+hasil1);
+        alert(name1 + ' adalah Pemenang dari game ini dengan Skor ' + hasil1 );
+    }else if((hasil2>hasil1)&&(hasil2>hasil3)){
+            console.log('Winner =2 dg skor = '+hasil2);
+            alert(namet2 + ' adalah Pemenang dari game ini dengan Skor ' + hasil2 );
+             }
+else if((hasil3>hasil1)&&(hasil3>hasil2)){
+            console.log('Winner =3 dg skor = '+hasil3);
+            alert(namet3 + ' adalah Pemenang dari game ini dengan Skor ' + hasil3 );
+             }
+    else if((hasil3==hasil1)&&(hasil3==hasil2)){
+            console.log('draw atau seri');
+            alert(' DRAW ATAU SERI');
+             }
+</script>
+
+    </body>
+</html>
